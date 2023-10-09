@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins&display=swap');
+
+
+* {
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header{
+    width: 100;
+    background-color:#222 ;
+    line-height: 60px;
+    color: white;
+
+}
+
+header nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .menu-btn{
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1877f2;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+ nav .menu-btn span{
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3px;
+
+}
+
+nav ul li{
+   list-style: none;
+   display: inline-flex;
+   padding: 0px 12px ;
+   transition: all 0.3s ease-in;
+
+}
+nav ul li a,
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+nav.logo a{
+    font-size: 1.2em;
+}
+nav ul li:hover{
+    background-color:orange;
+    
+}
+
+/* section */
+
+#hero{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden ;
+}
+
+/* side bar social links */
+
+#hero aside{
+    position: fixed;
+    right: 0px;
+    top:20%
+
+}
+
+aside .sticky-menu li{
+    list-style: none;
+    padding:10px 20px ;
+    margin-top: 3px;
+    cursor: pointer;
+    transform: translate(100px);
+    transition: 0.4s ease-in-out;
+}
+
+aside .sticky-menu li:hover{
+    transform: translate(0);
+}
+
+.sticky-menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sticky-menu li:nth-child(1){background-color: #1877f2;}
+.sticky-menu li:nth-child(2){background-color:#222 ;}
+.sticky-menu li:nth-child(3){background-color: #cd201f}
+.sticky-menu li:nth-child(4){background-color: #db3236}
+.sticky-menu li:nth-child(5){background-color: #4078c0}
+
+
+/* row */
+ .row{
+    width: 100%;
+    width: 100%;
+ }
+
+ #home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./img/5652012.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+   
+ }
+
+ #home h1,#home h2{
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+ }
+
+ /* About Section */
+
+ #about{ 
+    display: flex;
+   height: 100vh;
+   
+   
+}
+
+#about .col{
+    width: 100%;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+#about .col h1{
+    font-size: 2.5rem;
+}
+#about .col .content{
+    text-align: justify;
+    /* word-break:break-all */
+}
+
+#about .content p{
+    text-indent: 100px;
+    margin-top: 20px;
+}
+#about .about-cord{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about .about-cord .image{
+    height: 200px;
+    width: 200px;
+}
+
+#about .about-cord .image img{
+    max-width: 100%;
+    border-radius: 10%;
+    border: 3px solid #fff;
+    outline: 3px solid #4078c0;
+}
+
+#about  ul li{
+    list-style: none;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about ul li strong{
+    color: #419197;
+    font-weight: 800;
+}
+
+
+#about .tech-cord{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#about ul li span{
+    color: #419197;
+}
+
+#about .tech-cord a{
+    text-decoration: none;
+    background-color: #12486b;
+    color: #fff;
+    padding: 12px 14px;
+    width: 150px;
+}
+/* nav #menu{
+    display: none;
+} */
+
+nav{
+    position: relative;
+}
+
+
+
+
+#resume,
+#project
+#contact{
+    height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* resume */
+
+#resume{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10rem; */
+    background-color: #eee; 
+
+}
+
+#resume .col{
+      height: 100vh;
+      width: 90%;
+      padding: 30px;
+      /* margin-top: 10rem; */
+       display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+}
+
+#resume .col .table-responsive{
+    width: 100%;
+    overflow-x:auto ;
+}
+
+table{
+    width: 100%;
+}
+table,tr,td,th{
+    border: 1px solid #222;
+    border-collapse: collapse;
+    table-layout: fixed;
+    align-items: center;
+}
+td, th{
+    padding: 10px;
+}
+
+
+/* project */
+
+#project{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    overflow: hidden;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+#project .col{
+    height: 100%;
+    width: 85%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#project .col .card-container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#project .col .card-container .card{
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+    border-radius: 10px;
+}
+
+#project .col .card-container .card:hover{
+    box-shadow: rgba(100, 100,111,0.2) 0px 7px 29px 0px;
+}
+#project .col .card-container .card .card-image{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#project .col .card-container .card .card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#project .card-body{
+    line-height: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+    /* position: absolute;
+    left: 180px;
+    bottom: -40px; */
+
+}
+#project  .card-body h5{
+    font-size: 1.2rem;
+    color: #12486b;
+   
+
+}
+
+#project  .card-body p{
+    text-align: justify;
+    /* word-break: break-all; */
+
+}
+
+#project a{
+  padding: 8px 10px;
+  background-color: #12486b;
+  color: #fff;
+  text-decoration: none;
+  /* height: 60px; */
+  text-align: center;
+  align-items: center;
+}
+
+/* contact */
+#Contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+#Contact .col{
+    height: 100%;
+    width: 85%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#Contact .col .card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Contact .col .card .card-body{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#Contact .col .card .card-body iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#Contact .col .card .card-body form{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+gap: 10px;
+}
+
+#Contact .col .card .card-body form .form-group{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#Contact .col .card .card-body form .form-group input,
+#Contact .col .card .card-body form .form-group textarea{
+    padding: 10px;
+    width: 200px;
+}
+
+#Contact .col .card .card-body form .form-group input[type="submit"]{
+    background-color: #12486b;
+    color: #fff;
+    border: 1px solid #12486b;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+#Contact .col .card .card-body form .form-group input[type="submit"]:hover{
+    background-color: white;
+    color: #12486b;
+}
+
+/* footer */
+
+footer{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

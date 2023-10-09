@@ -1,0 +1,85 @@
+@media screen and (max-width:996px) {
+    header nav .menu-btn{
+        opacity: 1;
+        visibility: visible;
+      }
+
+      nav #menu{
+          display: none;
+      }
+
+   /* home section */
+
+ #home{
+    font-size: 3em;
+}
+
+#home h2{
+    font-size: 1.2em;
+    font-weight: 700;
+} 
+
+/* about section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+#about >.col{
+    width: 100%;
+    margin: auto;
+}
+#about > .col:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+nav #menu.responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    left:0;
+    width: 200px;
+
+}
+#resume{
+    display: flex;
+    height: 100%;
+}
+#project{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+#project .card-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#Contact{
+    display: flex;
+    height: 100%;
+}
+
+#Contact .card .card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+
+
